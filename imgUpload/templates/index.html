@@ -1,0 +1,27 @@
+<!doctype lang="en">
+<html>
+	<head>
+		<title></title>
+		<link href ="./static/css/text.css" type="text/css" rel = "stylesheet"></link>
+	</head>
+	<body>		
+		<form action="upload" method="post" enctype="multipart/form-data" >
+			<div id="uploadBox"></div>
+			<input type = "submit" value = "go">			
+		</form>	
+		<div id = "template" class = "hidden">
+			<li>
+				<img src = '/'>
+				<span class = "progress"></span>
+				<span class = "percentage"></span>
+			</li>
+		</div>
+	</body>
+	<script src = "static/jQuery.js" type = "text/javascript"></script>
+	<script src = "static/upload.js" type = "text/javascript"></script>
+	<script type = "text/javascript">
+		window.onload = function(){
+			tupload.html5UpLoad.init()
+		}
+	</script>
+</html>
